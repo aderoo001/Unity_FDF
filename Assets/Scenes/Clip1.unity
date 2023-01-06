@@ -737,10 +737,10 @@ MonoBehaviour:
   essaims: {fileID: 1698851963066561814, guid: 000506218bb38401fa0934d1e09b3536, type: 3}
   border: {fileID: 3250308173843286740, guid: c307e9096a6b04b669c8d5728321a4f1, type: 3}
   fire: {fileID: 245534138504920988, guid: f911f70e0f6084d2bb2644b7c7a22eef, type: 3}
-  fireDetected: {fileID: 2246769775130390213, guid: dadab0b2f13dd4df4a30ee2a76a30113, type: 3}
   image: {fileID: 2743787356565187273, guid: 19d7ee3046a0b9142915e2f096f33302, type: 3}
   voilure: {fileID: 153088235465700414, guid: eb29f32230714e54eb747e8b443ba8e3, type: 3}
   energy: {fileID: 2246769775130390213, guid: a5d02859a6b01d84081ae5bd8ec01e92, type: 3}
+  navigation: {fileID: 2246769775130390213, guid: 47e166071a5284fdbb9de1f2db85747b, type: 3}
   moduleCam: {fileID: 7551384133976164081, guid: afc024b9eb1e2da4d85db7c88651bea2, type: 3}
   moduleCom: {fileID: 5863858257509607098, guid: 2a6c54a1b7266814686507a68650e1d3, type: 3}
   camInfra: {fileID: 5128491789901666466, guid: d6aa4d541fd1855478638f5afff85e68, type: 3}

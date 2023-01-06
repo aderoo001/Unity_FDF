@@ -19,6 +19,7 @@ public class TimeLine : MonoBehaviour
     public GameObject image;
     public GameObject voilure;
     public GameObject energy;
+    public GameObject navigation;
     public GameObject moduleCam;
     public GameObject moduleCom;
     public GameObject camInfra;
@@ -81,18 +82,20 @@ public class TimeLine : MonoBehaviour
             t.position = Vector3.zero;
             t.rotation = Quaternion.Euler(0, 90, 25);
         }
-        else if (time == 18) moduleCam = Instantiate(moduleCam, go.transform) as GameObject;
-        else if (time == 19) moduleCom = Instantiate(moduleCom, go.transform) as GameObject;
-        else if (time == 20) energy = Instantiate(energy, go.transform) as GameObject;
-        else if (time == 21) voilure = Instantiate(voilure, go.transform) as GameObject;
-        else if (time == 24) {
+        else if (time == 19) voilure = Instantiate(voilure, go.transform) as GameObject;
+        else if (time == 21) energy = Instantiate(energy, go.transform) as GameObject;
+        else if (time == 23) moduleCom = Instantiate(moduleCom, go.transform) as GameObject;
+        else if (time == 25) navigation = Instantiate(navigation, go.transform) as GameObject;
+        else if (time == 27) moduleCam = Instantiate(moduleCam, go.transform) as GameObject;
+        else if (time == 29) {
             Destroy(title);
             Destroy(moduleCam);
-            Destroy(moduleCom);
             Destroy(energy);
             Destroy(voilure);
+            Destroy(navigation);
+            Destroy(moduleCom);
         }
-        else if (time == 25) {
+        else if (time == 31) {
             drone.GetComponent<Go_forward>().enabled = true;
 
             // Destroy text
@@ -106,30 +109,30 @@ public class TimeLine : MonoBehaviour
             setCameras();
         }
 
-        else if (time == 55) {  
+        else if (time == 46) {  
             fire = Instantiate(fire) as GameObject;
             Transform fireTrans = fire.GetComponent<Transform>();
-            fireTrans.position = new Vector3(980, 2110, 1126);
+            fireTrans.position = new Vector3(980, 2110, 616);
             fireTrans.localScale = new Vector3(254, 209, 452);
         }
 
-        else if (time == 60) {  
+        else if (time == 51) {  
             drone.GetComponent<Go_forward>().enabled = false;
 
             border = Instantiate(border) as GameObject;
             RectTransform t = border.GetComponent<RectTransform>();
             t.rotation = Quaternion.Euler(-87.2f, -17.5f, -10.06f);
-            t.position = new Vector3(992, 2126, 1132);
+            t.position = new Vector3(992, 2126, 613);
         }
 
-        else if (time == 65) 
+        else if (time == 55) 
         {
             Destroy(dronePOV);
             Destroy(camInfra);
             essaims = Instantiate(essaims) as GameObject;
         }
 
-        else if (time == 70)
+        else if (time == 65)
         {
             // Blink and destroy
             GameObject drone_3 = GameObject.Find("Drone_3");
@@ -143,13 +146,13 @@ public class TimeLine : MonoBehaviour
             Destroy(drone_3);
         }
 
-        else if (time == 75)
+        else if (time == 70)
         {
             GameObject drone_4 = GameObject.Find("Drone_4");
             GameObject drone_5 = GameObject.Find("Drone_5");
             drone_4.GetComponent<TakePlace>().enabled = true;
             drone_5.GetComponent<TakePlace>().enabled = true;
-            yield return new WaitForSeconds(1.9f);
+            yield return new WaitForSeconds(2.1f);
             drone_4.GetComponent<TakePlace>().enabled = false;
             drone_5.GetComponent<TakePlace>().enabled = false;
         }
