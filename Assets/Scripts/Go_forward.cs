@@ -5,7 +5,7 @@ using UnityEngine;
 public class Go_forward : MonoBehaviour
 {
     private GameObject go;
-    public float speed = 0.5f;
+    public float speed = 0.3f;
 
     // Start is called before the first frame update
     void Start()

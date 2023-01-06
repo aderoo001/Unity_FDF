@@ -734,10 +734,6 @@ MonoBehaviour:
   mission: {fileID: 5945549330177462347, guid: b93b02a89fa7e234ba05ed899d18b1dd, type: 3}
   spitch: {fileID: 6086168963079103887, guid: 4d2933a09e6cff945afab655074cbeea, type: 3}
   drone: {fileID: 3006978995294220069, guid: 96df1738873ae4e4cbc098965d20b033, type: 3}
-  essaims: {fileID: 1698851963066561814, guid: 000506218bb38401fa0934d1e09b3536, type: 3}
-  border: {fileID: 3250308173843286740, guid: c307e9096a6b04b669c8d5728321a4f1, type: 3}
-  fire: {fileID: 245534138504920988, guid: f911f70e0f6084d2bb2644b7c7a22eef, type: 3}
-  fireDetected: {fileID: 2246769775130390213, guid: dadab0b2f13dd4df4a30ee2a76a30113, type: 3}
   image: {fileID: 2743787356565187273, guid: 19d7ee3046a0b9142915e2f096f33302, type: 3}
   voilure: {fileID: 153088235465700414, guid: eb29f32230714e54eb747e8b443ba8e3, type: 3}
   energy: {fileID: 2246769775130390213, guid: a5d02859a6b01d84081ae5bd8ec01e92, type: 3}
